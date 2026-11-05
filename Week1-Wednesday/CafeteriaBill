@@ -1,0 +1,45 @@
+import java.util.Scanner;
+public class CafeteriaBill{
+    public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
+        double subtotal = 0;
+        int choice;
+            do{
+                showMenu();
+                System.out.print("choice (1-5): ");
+                choice = Scanner.nextInt();
+                    switch(choice) {
+                        case 1: case 2: case 3: case 4:
+                            System.out.print("Qty: ");
+                            int qty = Scanner.nextInt();
+                        subtotal += getprice(choice) * qty;
+                                break;
+                            case 5:
+                                break;
+                            default:
+                        System.out.println("Invalid choice");
+                    }
+            } while(choice != 5);
+            calculateFinalBill(subtotal);
+    }    
+        public static void showMenu(){
+            System.out.println("\n1. Jollof N1500 2.Chicken N2500 3.Meatpie N800 4.Water N300 5.Exit");
+        }
+        public static double getprice(int choice){
+                if(choice==1) return 1500;
+                if(choice==2) return 2500;
+                if(choice==3) return 800;
+                if(choice==4) return 300;
+                return Exit;
+        }
+        public static void calculateFinalBill(double subtotal) {
+            double discount = (subtotal > 5000) ? subtotal * 0.1 : 0;
+            double vat = (subtotal - discount) * 0.075;
+            double total = subtotal - discount + vat;
+            System.out.println("\n--- Receipt ---");
+            System.out.println("Subtotal: N" + subtotal);
+            System.out.println("Discount: N" + discount);
+            System.out.println("VAT: 7.5%: N" + vat);
+            System.out.println("Total: N" + total);
+        }
+}
