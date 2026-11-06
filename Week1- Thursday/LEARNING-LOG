@@ -1,0 +1,47 @@
+## Part 1:Guided AI study
+### Topic 1: Nested loops
+**My Prompt(using C-O-N-T-E-X-T):** > **C - Context:** I am a beginner Java student in a bootcamp, Week1. I know for loops but i get confused when one loop is inside another.
+>**O - Objective:** I want to understand nested loops and how to trace them round by round.
+>**N - Need:** explain in a very simple English like you are teaching a 10-year-old.
+>**T - Tone:** friendly and patient tutor.
+>**E - Example:** Use a real example like rows and columns in a table, then show Java code for printing a 3x3 star pattern.
+>**T - Test:** At the end, quiz me with 2 questions.Questions 1: If outer loop runs 3 times and inner loops runs 4 times, how many times does the inside code run? Question 2: What will this print? for(int i=1; i<=2; i++){ for(int j=1; j++){ System.out.print("*"); } System.out.println();}
+**What I learned:** A nested loop is a loop inside another loop. The outer loop is like teacher counting rows, and the inner loop is the column in each rows. The inner loop must finish completely before the outer loop moves to the next round. So if outer runs 3 times and inner runs 4 times, the outside 4 times, the inside code runs 3 x 4 = 12 times.
+**Quiz Answers** 
+1. My answer: 12 times. 
+2. My answer: It will print 2 lines with 3 stars each. 
+### Topic 2: Parameters vs Arguments, Void vs Return Methods
+**My Prompt (using C-O-N-T-E-X-T):
+>**C - CONTEXT:** I am a beginner Java student learning methods. I keep mixing up parameters and arguments.
+>**O - Objective:** I want to clearly understand the difference between parameters and arguments, and between void methods and methods that return a value.
+>**N - Need:**  Explain with simple daily life and Java code.
+>**T - Tone:** Simple no big grammer.
+>**E - Example:** Use an example like a method that makes tea - it needs sugar as an input, and a method that calculates total prices and give the back a number 
+> **X - eXtra:** Give me a table comparing void and return methods.
+> **T - Test:** Quiz me: 1) In add'(5, 3)', what are 5 and 3 called? 2) If a method says 'void', does it give back a value? 3) Write a method that takes a name and returns "Hello + name".
+**What I learned:** A parameter is the placeholder in the method definition, like the empty cup waiting for tea. An argument is the real value you pass when you call the method. A void method just does an action like printing, it gives back nothing. A return method does calculation and gives back a value that you can store in a varaiable.
+**Quiz Answers:**
+1. My answer: Arguments.
+2. My answer: No, void means nothing.
+3. My answer: 'String greet(String name){ return "Hello " + name;}'
+### Topic 3: Common Loop Bugs
+**My prompt:**
+>**C - Context:** I am a beginnr Java student. My loops sometimes run one time too many or never stop.
+>**O -Objective:** I want to understand off-by-one errors and infinite loops and how to avoid them.
+>**N -Need:** Explain the two bugs with simple examples and how to fix them.
+>**T -Tone:** Make it friendly.
+>**E - Example:** Show a loop that should print 1 to 5 but prints 1 to 6 because of off-by-one. Show a while loop that never stops because the counter was not updated.
+>**X - extra:** Give me a checklist to check before I run a loop.
+>**T - Test:** Quiz me: 1) what is wrong with 'for(int i=0; i<=5; i++)' if I want 5 times? 2) Why does 'while(count > 0){ System.out.println(count);}' never stop?
+**What I learned:** An off-by-one error happens when you use '<' instead of '<=' or start from 0 instead of 1, so your loop runs one time or too manyor too few. an infinite loop happens when the condition never becomes false, like forgetting to do 'count--' inside a while loop. To avoid them, I should always check my start value,my end condition, and make sure my counter is changing inside the loop.
+**Quiz Answes**
+1. My answer: It will run 6 times (0,1,2,3,4,5,), not 5. Should be 'i < 5'.
+2. My answer: Because count never decreases, so it stays > 0 forever.
+##Part 4 Reflection
+**1. Which concept from this week is difficult for you, and what did you do to understand it?
+The hardest concept for me was nested loops. I get confused by about which loop finishes first. To understand it, I traced it round by round on paper with a table for i and j, and I ran a small star pattern program. After seeing the inner loop finish completely before the outer loop moved, it finally clicked for me.
+**2. Describe one thing the AI gave you something unclear or wrong, and how you checked it.**
+One time the AI gave me code with a semicolon after a loop and it looked correct but it did not work. I checked it by running it in my editor and reading the error message. I also asked the AI to explain that line again and compare it with my notes. That taught me to always run the code and not just copy it.
+**3. What will you do differently next week?**
+Next week I will trace everything on paper before I run it, and I will write smaller methods instead of putting everything in main. I will also test my code with different inputs, like 0 and big numbers, to catch bugs early. I want to ask more questions and practice everyday, even for 30 minutes.
+    
