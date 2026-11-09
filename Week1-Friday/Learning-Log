@@ -1,0 +1,18 @@
+**Topic 1: Arrays**
+Prompt: C: Week 1 beginner building result manager. O: Understand arrays, indexing, avoid ArrayIndexOutOfBounds. N: Simple English + code. T: Friendly.E: 10 students example. X: Show what happens at index 10. T: Show what me 2 questions.
+Learned: Array holds many values, index starts at 0. Size 10 means valid 0-9. Using index 10 crashes.
+Always check count < length before adding.
+Quiz: 1) Last index of size 10 is 9 
+2) Count stops overflow 
+**Topic 2: String Methods**
+Prompt: C:Beginner confused by == vs 
+equals: O: Learn String methods + why
+equals: N: Simple + examples. T: 
+Simple: E: Search "Ada" vs "ada".X:
+Table of methods. T: Quiz me 2 questions.
+Learned: == checks memory location,equals checks real letters.
+equalsIgnoreCase ignore capital/small. Use it for searching names.
+Quiz: 1:) "Ada" == new String("Ada") is false 
+2) equalsIgnoreCase finds Ada
+**Topic 3: Git Commits**
+Prompt: C: 
