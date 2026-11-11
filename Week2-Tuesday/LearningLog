@@ -1,0 +1,19 @@
+Topic: Encapsulation:
+Prompt: I am an ND student learning java OOP, just finished classes/contructors.
+Explain encapsulationand private keyword.
+Quize me with three questions. Simple English no jargon.
+Use simple school example and ask me 3 questions at the end.
+What I learned: Encapsulation is hiding data with private and only allowing access through public methods. It stops anyone from setting a bad value like score 500 directly.
+Quiz answers:1) private means only inside the class
+2) Without it anyone can corrupt the data
+3) Yes, public setters and getters are the door
+Prompt 2: Same student, Why setters must validate. Example with level 1 or 2,so object never becomes invalid.
+Quiz answers: 1) Getter reads, setter writes,2) To stop invalid data 3)Print message + keep old value.
+Prompt 3: Why constructors should call setters, what AI reveiw can/cannot do.
+What I learned:If constructor sets field directly it bypasses checks calling setter reuses same check. AI review can spot style/validation gaps but cannot 
+run code or know my teacher's exact marking rules.
+Reflection
+1) Encapsulation to a friend;
+Think of your phone PIN. You don't give everyone your bank app,you give them a lock screen with only three buttons. Encapsulationis same-hides the real data,give people safe buttons to use it'
+2) AI suggestion that changed my code most; To make studentID read only with no setter. I accepted because ID should never change after admission, it protects identity.
+3) One thing AI review could no tell me; whether my teacher will accept my design choice, or whether the code actually runs on my laptop- I had to compile and test myself.

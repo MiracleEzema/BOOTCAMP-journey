@@ -1,0 +1,21 @@
+My prompt: ND java student, student class review  with private fields, encapsulation, validation, naming, readability, missing, cases... List suggestions numbered
+AI Review Summary Pasted:
+Make fields private - Done
+make studentID read-only- Good
+Validate in setters - Good
+Costructors should call setters - Good
+Add toString() - Good
+Add validation for studentID in constructors - Suggested
+Throw exception instead of println - Suggested
+My Decisions:
+1: Accepted - Already done
+2: Accepted - Id must not change
+3: Accepted - prevents empty or invalid values
+5: Accepted - makes printing neat
+6: Rejected - Teacher said studentId is set only in constructorwith no setter, adding extra change will change spec. I kept simple assignment.
+7: Rejected - Throwing exception would crash program. Printing message + keeping value is what assignment asked for and it is friendlier for beginner.
+What AI missed and got wrong:
+AI suggested throwing exceptions, but assignment explicitly says print message and keep old value. I checked by re-reading assignment and testing.
+- println versionkeeps program running, exception version would stop StudentTest.
+Final:
+Applied accepted suggestions(toString(), read-only ID).Commited
